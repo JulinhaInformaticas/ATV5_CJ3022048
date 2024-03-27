@@ -1,4 +1,4 @@
-﻿namespace ATV5_CJ3022048
+namespace ATV5_CJ3022048
 {
     internal class Program
     {
@@ -45,25 +45,39 @@
                 case 3:
                     Console.WriteLine("ATIVIDADE 2");
                     //ATV 2
-                    int n1, m1;
-                    int par;
+                    int a2, n1;
 
-                    Console.WriteLine("digite um número inteiro aleatório: ");
-                    m1 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Escreva um número inteiro aleatório: ");
+                    n1 = int.Parse(Console.ReadLine());
 
-                    for (par = 0; par <= n1; n1++) ;
-                       if (n1 %2 ==0)
+                    for (a2 = 0; a2 <= n1; a2++)
                     {
-                        Console.WriteLine("{0}", n1);
+                        if (a2 % 2 == 0)
+                        {
+                            Console.WriteLine(a2);
+                        }
                     }
-
-
-                break;
+                    break;
 
                 case 4:
+                    Console.WriteLine("ATIVIDADE 3");
                     //ATV 3
 
-                    break;
+                    int mil, div;
+                    Console.WriteLine("digite um número inteiro menor que 1000: ");
+                    mil = int.Parse(Console.ReadLine());
+                    if (mil < 1000)
+                    {
+                        for (div = 1000; div <= mil; div++);
+                        {
+                            if ((div % 2) == 0) ;
+                            {
+                                Console.WriteLine(div);
+                            }
+                        }
+                    }
+
+                break;
 
                 case 5:
                     //ATV 4
