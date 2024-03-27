@@ -60,74 +60,125 @@ namespace ATV5_CJ3022048
                     break;
 
                 case 4:
-     Console.WriteLine("ATIVIDADE 3");
-     //ATV 3
+                     Console.WriteLine("ATIVIDADE 3");
+                     //ATV 3
 
-     int div = 1000;
+                     int div = 1000;
 
-     Console.WriteLine("Escreva um úmero interiro menor que 1000");
-     int mil = int.Parse(Console.ReadLine());
+                     Console.WriteLine("Escreva um úmero interiro menor que 1000");
+                     int mil = int.Parse(Console.ReadLine());
 
-     if (mil < 1000)
-     {
-         for (div = 1000; div >= mil; div--)
-         {
-             if ((div % 2) == 0)
-             {
-                 Console.WriteLine(div);
-             }
-         }
-     }
-     else
-     {
-         Console.WriteLine("OPÇÃO INVÁLIDA");
-     }
-
- break;
-
+                     if (mil < 1000)
+                     {
+                         for (div = 1000; div >= mil; div--)
+                         {
+                             if ((div % 2) == 0)
+                             {
+                                 Console.WriteLine(div);
+                             }
+                         }
+                     }
+                     else
+                     {
+                         Console.WriteLine("OPÇÃO INVÁLIDA");
+                     }
+                 break;
 
                 case 5:
+                    Console.WriteLine("ATIVIDADE 4");
                     //ATV 4
 
-                    break;
+                    int somaPositivos = 0;
+
+                    while (somaPositivos < 200)
+                    {
+                        Console.Write("Digite um número inteiro: ");
+                        int n2 = int.Parse(Console.ReadLine());
+
+                        if (n2 > 0)
+                        {
+                            Console.WriteLine("Número positivo: " + n2);
+                            somaPositivos += n2;
+                        }
+                    }
+                    Console.WriteLine("Soma dos números positivos atingiu ou ultrapassou 200.");
+                    Console.WriteLine("Programa encerrado.");
+                break;
 
                 case 6:
+                    Console.WriteLine("ATIVIDADE 5");
                     //ATV 5
 
+                    int numero;
+                    Console.Write("Digite um número inteiro positivo: ");
+                   numero  = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Divisores de {0}:", numero);
+
+                    for (int i = 1; i <= numero; i++)
+                    {
+                        if (numero % i == 0)
+                        {
+                            Console.WriteLine(i);
+                        }
+                    }
                     break;
 
                 case 7:
                     Console.WriteLine("ATIVIDADE 6");
                     //ATV 6
-                    int v1 , v2, v3, v4, v5, v6, v7, v8, v9, v10;
+                    int quantidadeNumeros = 10;
+                    int maiorNumero = int.MinValue;
+                    int menorNumero = int.MaxValue;
 
-                    Console.WriteLine("digite um valor para v1: ");
-                    v1 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v2: ");
-                    v2 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v3: ");
-                    v3 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v4: ");
-                    v4 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v5: ");
-                    v5 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v6: ");
-                    v6 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v7: ");
-                    v7 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v8: ");
-                    v8 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v9: ");
-                    v9 = int.Parse(Console.ReadLine());
-                    Console.WriteLine("digite um valor para v10: ");
-                    v10 = int.Parse(Console.ReadLine());
-                  
+                    for (int i = 1; i <= quantidadeNumeros; i++)
+                    {
+                        Console.Write("Digite o número " + i + ": ");
+                        int n3 = int.Parse(Console.ReadLine());
 
+                        if (n3 > maiorNumero)
+                        {
+                            maiorNumero = n3;
+                        }
+
+                        if (n3 < menorNumero)
+                        {
+                            menorNumero = n3;
+                        }
+                    }
+
+                    Console.WriteLine("O maior número digitado foi: " + maiorNumero);
+                    Console.WriteLine("O menor número digitado foi: " + menorNumero);
                     break;
 
                 case 8:
+                    Console.WriteLine("ATIVIDADE 7");
                     //ATV 7
-                    
+                    int somaPares = 0;
+                    int somaImpares = 0;
+
+                    while (true)
+                    {
+                        Console.Write("Digite um número (ou zero para sair): ");
+                        int n4= int.Parse(Console.ReadLine());
+
+                        if (n4 == 0)
+                        {
+                            break; 
+                        }
+
+                        if (n4 % 2 == 0)
+                        {
+                            somaPares += n4;
+                        }
+                        else
+                        {
+                            somaImpares += n4;
+                        }
+                    }
+
+                    Console.WriteLine("Soma dos números pares: " + somaPares);
+                    Console.WriteLine("Soma dos números ímpares: " + somaImpares);
 
                     break;
 
