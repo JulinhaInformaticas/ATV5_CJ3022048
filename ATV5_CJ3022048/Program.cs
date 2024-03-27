@@ -60,24 +60,31 @@ namespace ATV5_CJ3022048
                     break;
 
                 case 4:
-                    Console.WriteLine("ATIVIDADE 3");
-                    //ATV 3
+     Console.WriteLine("ATIVIDADE 3");
+     //ATV 3
 
-                    int mil, div;
-                    Console.WriteLine("digite um número inteiro menor que 1000: ");
-                    mil = int.Parse(Console.ReadLine());
-                    if (mil < 1000)
-                    {
-                        for (div = 1000; div <= mil; div++);
-                        {
-                            if ((div % 2) == 0) ;
-                            {
-                                Console.WriteLine(div);
-                            }
-                        }
-                    }
+     int div = 1000;
 
-                break;
+     Console.WriteLine("Escreva um úmero interiro menor que 1000");
+     int mil = int.Parse(Console.ReadLine());
+
+     if (mil < 1000)
+     {
+         for (div = 1000; div >= mil; div--)
+         {
+             if ((div % 2) == 0)
+             {
+                 Console.WriteLine(div);
+             }
+         }
+     }
+     else
+     {
+         Console.WriteLine("OPÇÃO INVÁLIDA");
+     }
+
+ break;
+
 
                 case 5:
                     //ATV 4
